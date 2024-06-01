@@ -15,21 +15,21 @@
     }
   }
   if ($userNumberOne < 0 && $userNumberTwo < 0) {
-    for ($counter = 0; $counter < Math.abs($userNumberTwo); $counter++) {
-      if ($counter < Math.abs($userNumberTwo)) {
+    for ($counter = 0; $counter < abs($userNumberTwo); $counter++) {
+      if ($counter < abs($userNumberTwo)) {
         $sum = $sum - $userNumberOne;
       }
     }
   }
   if ($userNumberOne < 0 || $userNumberTwo < 0) {
     // Find the positive number
-    $positiveNumber = Math.max($userNumberOne, $userNumberTwo);
+    $positiveNumber = max($userNumberOne, $userNumberTwo);
     // Find the negative number
-    $negativeNumber = Math.min($userNumberOne, $userNumberTwo);
+    $negativeNumber = min($userNumberOne, $userNumberTwo);
 
     // for if the counter is less than the absolute value of the negative number, run the code that adds the absolute value of the negative number to the sum, and then repeat until the counter is not less than the absolute value of the negative number.
     for ($counter = 0; $counter < $positiveNumber; $counter++) {
-      $sum = $sum - Math.abs($negativeNumber)
+      $sum = $sum - abs($negativeNumber);
     }
   }
   
