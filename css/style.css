@@ -1,4 +1,46 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
-* This file contains the CSS for index.html
+/* Created by: Niko Shivkumar
+* Created on: may 30th 2024
+* This file contains the CSS for index.php
 */
+
+html {
+  background-color: #788197;
+}
+
+h1 {
+  background-color: #91a8ee;
+  padding: 25px;
+  text-align: center;
+  border: 5px solid black;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+h3 {
+  padding: 25px;
+  text-align: center;
+  border: 1px solid black;
+  margin-left: 600px;
+  margin-right: 600px;
+  font: 12pt Arial;
+  background-color: #6a9cd2;
+}
+
+p {
+  text-align: center;
+  background-color: #a9aa6e;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 2px;margin-left: 750px;
+  margin-right: 750px;
+}
+
+iframe {
+  text-align: center;
+  background-color: #968f6e;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 2px;
+  margin-left: 600px;
+  margin-right: 600px;
+}

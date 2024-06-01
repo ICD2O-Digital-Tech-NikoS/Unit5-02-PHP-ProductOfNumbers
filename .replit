@@ -1,4 +1,6 @@
-entrypoint="index.html"
+run = "php -S 0.0.0.0:8000 -t ."
+
+entrypoint="index.php"
 hidden=[".config"]
 modules = ["web:v2-20230623-0b7a606"]
 
@@ -6,5 +8,9 @@ modules = ["web:v2-20230623-0b7a606"]
 channel = "stable-23_11"
 
 [deployment]
-publicDir = "/"
+run = ["php", "-S", "0.0.0.0:8000", "-t", "."]
 deploymentTarget = "static"
+
+[[ports]]
+localPort = 8000
+externalPort = 80
