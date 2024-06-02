@@ -1,12 +1,12 @@
 <?php
-  // get user input for min
+  // get user input 
   $userNumberTwo = $_POST["userNumberTwo"];
-  // get user input for max
+  // get user input
   $userNumberOne = $_POST["userNumberOne"];
-  // empty string for displaying numbers
+  //sets sum of nubmers to zero
   $sum = 0;
 
-  // while counter is not equal to userMax, update the counter unti it is equal to userMax
+  // if both numbers are greater than zero 
   if ($userNumberOne > 0 && $userNumberTwo > 0) {
     for ($counter = 0; $counter < $userNumberTwo; $counter++) {
       if ($counter < $userNumberTwo) {
@@ -14,6 +14,7 @@
       }
     }
   }
+  // if both numbers are less than zero
   if ($userNumberOne < 0 && $userNumberTwo < 0) {
     for ($counter = 0; $counter < abs($userNumberTwo); $counter++) {
       if ($counter < abs($userNumberTwo)) {
@@ -21,6 +22,7 @@
       }
     }
   }
+  // if one number is less than zero
   if ($userNumberOne < 0 || $userNumberTwo < 0) {
     // Find the positive number
     $positiveNumber = max($userNumberOne, $userNumberTwo);
@@ -32,7 +34,7 @@
       $sum = $sum - abs($negativeNumber);
     }
   }
-  
+  // display the product
   echo "The product of the numbers is " . $sum;
 
 ?>
